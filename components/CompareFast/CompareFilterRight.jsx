@@ -265,7 +265,11 @@ const CompareFilterRight = ({
         // }}
       >
         <div className="comparelist-title text-center">
-          <h2 style={isLandscapeSmallScreen ? { fontSize: "1.5rem" } : {}}>
+          <h2
+          // style={isLandscapeSmallScreen
+          //   ?
+          //   { fontSize: "1.5rem" } : {}}
+          >
             Vergelijk &amp; Bespaar
           </h2>
         </div>
@@ -321,7 +325,7 @@ const CompareFilterRight = ({
                             <div className="cm-text-field Pakket-h">
                               <h5>Pakket:</h5>
                               <p>
-                                <i className ="fas fa-check text-success me-2"></i>
+                                <i className="fas fa-check text-success me-2"></i>
                                 {item?.power_origin
                                   ? JSON.parse(item.power_origin).join(", ")
                                   : ""}
