@@ -145,7 +145,7 @@ const ActionSection = ({
                         />
                         <p>Energise korting:</p>
                         <h4>€{item?.tax_reduction.toFixed(2)}</h4>
-                        {/* <i className="fas fa-info" /> */}
+                        <i className="fas fa-info-circle" />
                       </div>
                       <div className="spe-cont">
                         <Image
@@ -194,17 +194,14 @@ const ActionSection = ({
                             >
                               <i className="fas fa-info-circle" />
                             </a>
-      
+
                             <h4
                               style={{ top: "10px", left: "10px", margin: 0 }}
                             >
                               Pakket:
                             </h4>
                             <div key={i} style={{ fontSize: "16px" }}>
-                              {/* <i className="fas fa-check text-success me-2"></i>
-                              {item?.power_origin
-                                ? JSON.parse(item.power_origin).join(", ")
-                                : ""} */}
+                       
                               {item?.type_of_gas
                                 ? JSON.parse(item.type_of_gas).map(
                                     (gas, index) => (
@@ -314,8 +311,15 @@ const ActionSection = ({
                         <div className="col-xl-2 col-lg-4 col-md-12">
                           <div className="spe-cn-star text-center">
                             {/* <i className="fas fa-info" /> */}
-                            <h3>Klantenscore: 4/5</h3>
-                            <ul className="list-unstyled d-flex justify-content-center mb-3">
+                            <a
+                              style={{ cursor: "pointer", color: "gray" }}
+                              title="
+Deze score weerspiegelt de klanttevredenheid op basis van beoordelingen."
+                            >
+                              <i className="fas fa-info-circle" />
+                            </a>
+                            <h3 className="m-0">Klantenscore: 4/5</h3>
+                            <ul className="list-unstyled d-flex justify-content-center mb-1">
                               <li>
                                 <i className="fas fa-star" />
                               </li>
@@ -497,7 +501,6 @@ const ActionSection = ({
           </div>
         )}
       </div>
-
     </>
   );
 };
