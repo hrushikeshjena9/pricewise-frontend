@@ -1,0 +1,50 @@
+{
+  "name": "pricewise",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ramonak/react-progress-bar": "^5.2.0",
+    "@reduxjs/toolkit": "^2.2.2",
+    "axios": "^1.6.3",
+    "next": "14.1.4",
+    "next-auth": "^4.24.5",
+    "next-redux-wrapper": "^8.1.0",
+    "nextjs-toploader": "^1.6.4",
+    "react": "^18",
+    "react-confirm-alert": "^3.0.6",
+    "react-countdown": "^2.3.5",
+    "react-datepicker": "^7.5.0",
+    "react-dom": "^18",
+    "react-drag-drop-files": "^2.3.10",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.49.3",
+    "react-loader-spinner": "^6.1.6",
+    "react-loading-skeleton": "^3.4.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^9.1.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-responsive-modal": "^6.4.2",
+    "react-scroll-to-top": "^3.0.0",
+    "react-show-more-text": "^1.7.1",
+    "react-simple-star-rating": "^5.1.7",
+    "react-spring": "^9.7.3",
+    "react-spring-bottom-sheet": "^3.4.1",
+    "react-to-print": "^2.15.1",
+    "react-toastify": "^10.0.5",
+    "react-tooltip": "^5.28.0",
+    "redux-persist": "^6.0.0",
+    "sonner": "^1.4.41",
+    "swr": "^2.2.4",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}
