@@ -281,11 +281,11 @@ const CompareFilterRight = ({
                   <div className="col-lg-4 col-md-6" key={i}>
                     <div
                       className="compare-card-bx"
-                      style={
-                        isLandscapeSmallScreen
-                          ? { padding: "10px", fontSize: "0.9rem" }
-                          : {}
-                      }
+                      // style={
+                      //   isLandscapeSmallScreen
+                      //     ? { padding: "10px", fontSize: "0.9rem" }
+                      //     : {}
+                      // }
                     >
                       <div className="compare-card-cont">
                         <a
@@ -310,9 +310,9 @@ const CompareFilterRight = ({
                           <img
                             src={item?.image || "/images/placeholder.png"}
                             alt="Product"
-                            style={
-                              isLandscapeSmallScreen ? { width: "80%" } : {}
-                            }
+                            // style={
+                            //   isLandscapeSmallScreen ? { width: "80%" } : {}
+                            // }
                           />
                           <a href="#">
                             <i className="fal fa-plus"></i>
@@ -402,11 +402,11 @@ const CompareFilterRight = ({
                         <button
                           className="btn-one"
                           onClick={() => handleSingleProduct(item)}
-                          style={
-                            isLandscapeSmallScreen
-                              ? { padding: "5px 10px", fontSize: "0.8rem" }
-                              : {}
-                          }
+                          // style={
+                          //   isLandscapeSmallScreen
+                          //     ? { padding: "5px 10px", fontSize: "0.8rem" }
+                          //     : {}
+                          // }
                         >
                           Aanvragen
                         </button>
