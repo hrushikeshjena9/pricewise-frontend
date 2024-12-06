@@ -226,9 +226,9 @@ const CompareFilterRight = ({
   a,
   setA,
 }) => {
-  const [isLandscapeSmallScreen, setIsLandscapeSmallScreen] = useState(
-    window.innerWidth <= 768 && window.innerHeight < window.innerWidth
-  );
+  // const [isLandscapeSmallScreen, setIsLandscapeSmallScreen] = useState(
+  //   window.innerWidth <= 768 && window.innerHeight < window.innerWidth
+  // );
 
   const handleSingleProduct = (itemData) => {
     localStorage.setItem("SingleItem", JSON.stringify(itemData));
