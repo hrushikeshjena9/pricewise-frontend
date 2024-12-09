@@ -3872,7 +3872,7 @@ input[type="file"]::before {
   padding: 10px;
   box-shadow: 0 0 5px #000;
   position: relative;
-  height: 100%;
+  height: 165px;
   overflow: hidden;
 }
 .spe-cn [class*="fa-info"] {
@@ -8989,6 +8989,13 @@ li.lh-1 a {
 .Pakket-h{
   height: 140px;
 }
+@media (max-width: 768px) { 
+  .Pakket-h {
+    height: 180px;
+  }
+
+}
+
 .compare-card-cont h3 {
   color: #ff1838;
   margin: 0;
@@ -9116,15 +9123,6 @@ li.lh-1 a {
 .cm-button {
   text-align: center;
   padding: 15px;
-}
-
-@media only screen and (min-width: 1601px) and (max-width: 4000px) {
-}
-
-@media only screen and (min-width: 1501px) and (max-width: 1700px) {
-}
-
-@media only screen and (min-width: 1401px) and (max-width: 1500px) {
 }
 
 @media only screen and (min-width: 1301px) and (max-width: 1400px) {
@@ -10144,10 +10142,6 @@ div[style*="width:'3000px'"] {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-
-
-
-
 /* Accordion Collapse */
 .accordion-collapse-custom {
   margin-top: 10px;
@@ -10248,6 +10242,9 @@ div[style*="width:'3000px'"] {
   .border-new {
     padding: 3px;
   }
+  .left-side-filter{
+    margin: 46px 33px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -10292,8 +10289,8 @@ div[style*="width:'3000px'"] {
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: #000; /* Optional: Adjust icon color */
-  pointer-events: none; /* Prevent clicking the icon */
+  color: #000;
+  pointer-events: none; 
 }
 
 .search-box .form-control {

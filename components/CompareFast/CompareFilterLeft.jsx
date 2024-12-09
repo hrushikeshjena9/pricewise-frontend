@@ -8,10 +8,11 @@ const CompareFilterLeft = ({
   searchKeyword,
   setSearchKeyword,
 }) => {
+  const [isLandscapeSmallScreen, setIsLandscapeSmallScreen] = useState(false);
+
   const [showFirstBody, SetShowFirstBody] = useState(true);
   const [showSecondBody, setShowSecondBody] = useState(false);
   const [filters, setFilters] = useState();
-  // const [search,setSearch] = useState(searchKeyword || "");
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   useEffect(() => {
@@ -53,9 +54,36 @@ const CompareFilterLeft = ({
     setSearch(e.target.value);
     // setSearchKeyword(e.target.value);
   };
+
+  const checkOrientation = () => {
+    const isLandscape =
+      window.matchMedia("(orientation: landscape)").matches &&
+      window.innerWidth <= 768;
+    setIsLandscapeSmallScreen(isLandscape);
+  };
+
+  useEffect(() => {
+    checkOrientation();
+
+    window.addEventListener("resize", checkOrientation);
+    window.addEventListener("orientationchange", checkOrientation);
+
+    return () => {
+      window.removeEventListener("resize", checkOrientation);
+      window.removeEventListener("orientationchange", checkOrientation);
+    };
+  }, []);
+
   return (
     <>
-      <div className="col-lg-3">
+      <div className="col-lg-3 left-side-filter"
+            style={{
+              maxHeight: isLandscapeSmallScreen ? "516px" : "none",
+              overflowY: "auto",
+              overflowX: "hidden",
+              transform: isLandscapeSmallScreen ? "rotate(90deg)" : "none",
+            }}
+      >
         <div className="protectionbx">
           <h5>
             <i className="fas fa-sliders-h"></i>
